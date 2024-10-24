@@ -72,14 +72,14 @@ exports.sendEmailWithPDF = (req, res) => {
   writeStream.on('finish', () => {
     sendEmail(email, pdfPath, name)
       .then(() => {
-        res.status(200).json({ message: 'Email sent successfully' });
+        res.status(200).json({ message: ' ' });
         fs.unlink(pdfPath, (err) => {
           if (err) console.error('Failed to delete PDF:', err);
         });
       })
       .catch((error) => {
-        console.error('Error sending email:', error);
-        res.status(500).json({ message: 'Failed to send email', error: error.message });
+        console.error('Email göndərilmədi.', error);
+        res.status(500).json({ message: ' ', error: error.message });
       });
   });
 
