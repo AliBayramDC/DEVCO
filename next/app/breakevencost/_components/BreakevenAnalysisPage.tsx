@@ -50,7 +50,7 @@ const BreakevenPage: React.FC = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/send-pdf", {
+      const response = await axios.post("https://devco-backend.onrender.com/api/send-pdf", {
         sellingPrice,
         variableCost,
         fixedCost,
