@@ -1,0 +1,7 @@
+{
+  "/attestasiya/page": "app/attestasiya/page.js",
+  "/maliyye/page": "app/maliyye/page.js",
+  "/haqqimizda/page": "app/haqqimizda/page.js",
+  "/(landing-page)/page": "app/(landing-page)/page.js",
+  "/breakevencost/page": "app/breakevencost/page.js"
+}
